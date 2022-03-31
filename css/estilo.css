@@ -41,7 +41,7 @@ li a:hover {
     height: 250px;
     width: 250px;
     display: flex; 
-    margin-right: 190px;
+    margin: auto;
     position: relative;
     text-align: center;
 }
@@ -51,6 +51,7 @@ li a:hover {
 }
 .contactame {
     display: flex;
+    height: 100px;
 }
 .contactame img{
     width: 50px;
