@@ -34,15 +34,14 @@ li a:hover {
     display: block;
 }
 .ContainerImagenes {
-    height: 400px;
     display: flex;
+    flex-wrap: wrap; /*esto hace que si se achica la resolucion, los div hijos que no entren se vayan para abajo, tiene que estar en el container para hacer efecto */
 }
 .CajasImagenes {
     height: 270px;
     width: 270px;
     display: flex; 
     margin: auto;
-    position: relative;
     background-color: rgb(240, 170, 80);  
     text-align: center; /*esto es exclusivamente para el comentario de la foto, de cualquier manera se va a poner abajo de la foto, pero asi se centra bien. */
 }
@@ -56,7 +55,6 @@ figcaption {
 }
 .contactame {
     display: flex;
-    height: 100px;
 }
 .contactame img {
     width: 50px;
