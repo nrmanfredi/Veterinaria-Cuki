@@ -14,7 +14,7 @@ li{
 }
 li a {
     color: black;
-    display: block;
+    display: inline-block; /*da igual que sea inline-block o block, si es inline queda casi igual solo que mas feo ya que los espacios entre los list item los toma como un inline*/
     margin: 2px 2px 2px 4px ;
     background-color: blue;
     text-decoration: none;
@@ -25,7 +25,7 @@ li a:hover {
 }
 
 .Texto {
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family:Georgia, 'Times New Roman', Times, serif; 
 }
 .Oracion {
     color: blue;
@@ -38,22 +38,27 @@ li a:hover {
     display: flex;
 }
 .CajasImagenes {
-    height: 250px;
-    width: 250px;
+    height: 270px;
+    width: 270px;
     display: flex; 
     margin: auto;
     position: relative;
-    text-align: center;
+    background-color: rgb(240, 170, 80);  
+    text-align: center; /*esto es exclusivamente para el comentario de la foto, de cualquier manera se va a poner abajo de la foto, pero asi se centra bien. */
+}
+figcaption {
+    font-size: 12px;
 }
 .CajasImagenes img {
     height: 180px;
     width: 160px;
+    object-fit: cover; /*el cover sirve porque por mas que nosotros estemos asignandole height y width de esa forma la imagen se ajusta bien al height y width que nosotros le decimos */
 }
 .contactame {
     display: flex;
     height: 100px;
 }
-.contactame img{
+.contactame img {
     width: 50px;
     height: 50px;
     margin-right: 20px;
