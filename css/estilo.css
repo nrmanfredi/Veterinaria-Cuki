@@ -42,6 +42,7 @@ li a:hover {
     width: 270px;
     display: flex; 
     margin: auto;
+    border-radius: 20%;
     background-color: rgb(240, 170, 80);  
     text-align: center; /*esto es exclusivamente para el comentario de la foto, de cualquier manera se va a poner abajo de la foto, pero asi se centra bien. */
 }
@@ -55,10 +56,12 @@ figcaption {
 }
 .contactame {
     display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 .contactame img {
     width: 50px;
     height: 50px;
-    margin-right: 20px;
+    margin: 10px;
 }
 
